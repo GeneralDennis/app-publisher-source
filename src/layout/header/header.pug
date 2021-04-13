@@ -24,13 +24,14 @@ header.header
         .header__contacts-title E-mail
         a(href="mailto: go@app-publisher.ru").header__contacts-content go@app-publisher.ru
     .header__actions
-      button.header__button(href="") Оставить заявку
+      button.button.header__button Оставить заявку
       .header__language-active.js-show-languages RU
-        ul.header__language-list
-          li.header__language English
-          li.header__language Deutsch
-          li.header__language.header__language--active Русский
-          li.header__language Italiano
+        .header__language-wrapper
+          ul.header__language-list
+            li.header__language.header__language--active English
+            li.header__language Deutsch
+            li.header__language.header__language--active Русский
+            li.header__language Italiano
 
   .header__burger.js-open-menu
     span

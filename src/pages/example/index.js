@@ -3,7 +3,6 @@ import AppVue from './App.vue';
 import AppReact from './App.jsx';
 
 import './index.sass';
-import './example.pug';
 
 import './test-scss.scss';
 

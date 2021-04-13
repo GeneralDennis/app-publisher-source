@@ -3,6 +3,7 @@ import './grid';
 import './wrapper';
 import './content';
 import './footer';
+import './about';
 
 import InitHeader from './header'
 

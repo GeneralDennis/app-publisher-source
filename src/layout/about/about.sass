@@ -1,0 +1,115 @@
+.about
+  width: 100%
+  background: url('./about_fon.svg') 50% 0% no-repeat
+
+.about__container
+  max-width: 1516px
+  margin: 0 auto
+
+.about__content
+  position: relative
+  display: flex
+  justify-content: start
+  margin-bottom: 136px
+
+.about__content--right
+  justify-content: flex-end
+
+.about__details
+  padding: 143px 0 190px 80px
+
+
+.about__details--right
+  padding: 0
+
+.about__title
+  margin-bottom: 28px
+  width: auto
+  max-width: 680px
+  font-weight: 800
+  font-size: 64px
+  line-height: 1
+  color: $color-fourth
+  font-family: $font-family-base
+
+.about__title--right
+  margin-bottom: 67px
+
+.about__img
+  position: absolute
+  display: block
+  top: -60px
+  right: -205px
+  object-fit: cover
+
+.about__img--right
+  left: -150px
+  right: unset
+  top: -35px
+
+.about__subtitle
+  margin-bottom: 40px
+  width: auto
+  max-width: 680px
+  font-size: 20px
+  line-height: 1.3
+  font-family: $font-family-second
+
+.about__subtitle--right
+  p
+    &:first-child
+      margin-bottom: 20px
+
+    &:last-child
+      margin-bottom: 67px
+
+.about__actions
+  display: flex
+
+.about__button
+  padding: 24px 60px
+  margin-right: 40px
+
+.about__promo-button
+  display: flex
+  align-items: center
+  background: none
+  border: none
+  cursor: pointer
+  font-family: $font-family-second
+  font-size: 18px
+  line-height: 1.2
+  color: $color-fourth
+  font-weight: bold
+
+  svg
+    display: block
+    height: 33px
+    width: 33px
+    margin-right: 10px
+    circle
+      transition: fill .3s
+
+  &:hover
+    svg
+      circle
+        fill: $color-second
+
+.about__block
+  position: relative
+  padding-left: 100px
+  margin-bottom: 57px
+  img
+    position: absolute
+    top: 50%
+    left: 0
+    transform: translateY(-50%)
+
+  h3
+    width: 100%
+    max-width: 445px
+    font-size: 24px
+    line-height: 1.45
+    font-family: $font-family-second
+    color: $color-text-second
+    font-weight: bold

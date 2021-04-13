@@ -7,7 +7,7 @@ export default () => {
   const $menu = $root.find('.header__content');
   const $body = $root.closest('body');
   const $langBth = $root.find('.js-show-languages');
-  const $langList = $root.find('.header__language-list');
+  const $langList = $root.find('.header__language-wrapper');
   $burger.on('click', ()=>{
     $menu.addClass('header__content--open');
     $body.addClass('body--open-menu');
