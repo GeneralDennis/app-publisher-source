@@ -2,10 +2,17 @@ import './base';
 import './grid';
 import './wrapper';
 import './content';
+import '../pages/home/about';
+import './socials/socials.sass';
+import './card/card.sass';
+import './work-card/work-card.sass';
 import './footer';
-import './about';
-
-import InitHeader from './header'
+import './success-popup/success-popup.sass';
+import UpArrow from './up-arrow';
+import InitHeader from './header';
+import InitExpertise from './expertise-card';
+import CallbackForm from './callback-form';
+import CallbackPopup from './callback-popup'
 
 export default () => {
 
@@ -13,5 +20,25 @@ export default () => {
   if($header.length){
     new InitHeader($header)
   }
-  console.log('init layout');
+
+  let $expCard = $('.expertise-card')
+  if($expCard.length){
+    new InitExpertise($expCard)
+  }
+
+  let $callbackForm = $('.callback-form')
+  if($callbackForm.length){
+    new CallbackForm($callbackForm)
+  }
+
+  let $callbackPopup = $('.js-callback-popup')
+  if ($callbackPopup.length) {
+    new CallbackPopup()
+  }
+
+  let $upArrow = $('.up-arrow')
+  if($upArrow.length){
+    new UpArrow($upArrow)
+  }
+
 };

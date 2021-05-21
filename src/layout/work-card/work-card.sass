@@ -1,0 +1,42 @@
+.work-card
+  width: calc( 50% - 30px )
+  margin: 15px
+  padding: 70px 70px 55px 60px
+  border-radius: 16px
+  border: 1px solid #E0E0E0
+  cursor: pointer
+  transition: box-shadow .3s, border-color .3s
+
+  &:hover
+    box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.1)
+    border-color: transparent
+
+    .work-card__img
+      img
+        filter: grayscale(0%)
+
+    .work-card__title
+      color: $color-text-second
+
+.work-card__img
+  margin-bottom: 40px
+  width: 100px
+  height: 100px
+  img
+    display: block
+    transition: filter .3s
+    filter: grayscale(100%)
+
+.work-card__title
+  margin-bottom: 25px
+  font-weight: bold
+  font-size: 36px
+  font-family: $font-family-third
+  line-height: 45px
+  color: #4F4F4F
+  transition: color .3s
+
+.work-card__text
+  font-size: 20px
+  line-height: 26px
+  font-family: $font-family-second
