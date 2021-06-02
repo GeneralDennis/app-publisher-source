@@ -13,6 +13,7 @@ import InitHeader from './header';
 import InitExpertise from './expertise-card';
 import CallbackForm from './callback-form';
 import CallbackPopup from './callback-popup'
+import initMap from './map';
 
 export default () => {
 
@@ -21,7 +22,7 @@ export default () => {
     new InitHeader($header)
   }
 
-  let $expCard = $('.expertise-card')
+  let $expCard = $('.expertise-card__video')
   if($expCard.length){
     new InitExpertise($expCard)
   }
@@ -39,6 +40,11 @@ export default () => {
   let $upArrow = $('.up-arrow')
   if($upArrow.length){
     new UpArrow($upArrow)
+  }
+
+  let $map = $('.map');
+  if ($map.length) {
+    new initMap($map);
   }
 
 };

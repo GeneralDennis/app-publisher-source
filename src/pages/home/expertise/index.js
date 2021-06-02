@@ -8,8 +8,8 @@ class ExpertiseSlider {
   constructor($root) {
     this.slider = new Swiper('.expertise-swiper-container', {
       speed: 1000,
-      spaceBetween: 30,
-      slidesPerView: 2.5,
+      spaceBetween: 28,
+      slidesPerView: 2,
       // autoplay: {
       //   delay: 3000
       // },
