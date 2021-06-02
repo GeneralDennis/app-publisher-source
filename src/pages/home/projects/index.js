@@ -7,7 +7,16 @@ class ProjectsSlider {
     this.slider = new Swiper('.projects-swiper-container', {
       speed: 1000,
       spaceBetween: 30,
-      slidesPerView: 3.5,
+      slidesPerView: 1.3,
+      breakpoints: {
+        720: {
+          slidesPerView: 2
+        },
+        1230: {
+          slidesPerView: 3
+        }
+      }
+
       // autoplay: {
       //   delay: 3000
       // },
